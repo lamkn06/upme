@@ -21,7 +21,7 @@ import {
 } from '@chakra-ui/react';
 import get from 'lodash/get';
 import React, { useCallback, useState } from 'react';
-import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
+import FacebookLogin from '@greatsumini/react-facebook-login/dist/facebook-login-render-props';
 import GoogleLogin from 'react-google-login';
 import TagManager from 'react-gtm-module';
 import { useForm } from 'react-hook-form';
