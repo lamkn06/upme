@@ -1,0 +1,35 @@
+import { Center, Heading } from '@chakra-ui/react';
+import { Component } from 'react';
+
+class ErrorBoundary extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
+  }
+
+  static getDerivedStateFromError(error) {
+    // Update state so the next render will show the fallback UI.
+    return { hasError: true };
+  }
+
+  componentDidCatch(error, errorInfo) {
+    // You can also log the error to an error reporting service
+  }
+
+  render() {
+    if (this.state.hasError) {
+      // You can render any custom fallback UI
+      return (
+        <Center h={'full'} w={'full'}>
+          <Heading size={'xl'}>
+            Something went wrong. Refresh your page may fix this issue.
+          </Heading>
+        </Center>
+      );
+    }
+
+    return this.props.children;
+  }
+}
+
+export default ErrorBoundary;

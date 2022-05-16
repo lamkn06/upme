@@ -1,0 +1,16 @@
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+.container .mainContent {
+    position: absolute;
+    z-index: 1;
+    text-shadow:  0 0 5px white, 0 0 5px white,
+                  0 0 5px white, 0 0 5px white,
+                  0 0 5px white, 0 0 5px white,
+                  0 0 5px white, 0 0 5px white;
+}
