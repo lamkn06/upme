@@ -1,6 +1,7 @@
 {
   "name": "upme-frontend",
   "version": "0.1.0",
+  "proxy": "https://app-upme.herokuapp.com",
   "private": true,
   "engines": {
     "node": "16.14.x"
